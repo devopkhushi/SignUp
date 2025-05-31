@@ -1,0 +1,113 @@
+body {
+    /* background-color: rgb(248, 233, 159); */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+  }
+  .box{
+    /* background-color: rgb(248, 233, 159); */
+    display: flex;
+    max-width: 100%;
+    /* background-color: #fefdff; */
+    /* gap: 20px; */
+    padding: 20px;
+  }
+  .box-1 {
+    background-color:rgb(221, 223, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .box-2__form--button button{
+      color: #fefdff;
+      background-color: blue;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 6px;
+      border-radius: 6px;
+      cursor: pointer;
+  }
+  .box-2__or{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+  }
+  .box-2__or::before,
+  .box-2__or::after {
+    content: "";
+    top: 50%;
+    width: 35%;
+    height: 0.5px;
+    background-color: #343232;
+    gap: 2px;
+  }
+  .box-2__options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+  }
+  .box-2__options button:hover {
+    background-color: #9fc6f0;
+  }
+  
+  .box-2__options button {
+    height: 30px;
+  }
+  .box-2{
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color:rgb(221, 223, 221);
+  }
+  .box-1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 100%;
+  }
+  input[type="text"], input[type="email"]{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  input[type="password"] {
+    width:70%;
+    padding: 10px;
+    margin-bottom:5px;
+  }
+  label[for="user-name"],
+  label[for="user-email"] {
+      display: inline-block;
+      margin-right: 22px; 
+  }
+  @media only screen and (max-width: 800px) {
+     body{
+      display: flex; 
+      justify-content: center;
+      align-items: center;}
+  
+    .box {
+      flex-direction: column;
+      width: 90%;
+      max-height: 100vh;
+      box-sizing: border-box;
+      /* margin-top: 70%; */
+  
+    }
+    input[type="text"], input[type="email"],input[type="password"]{
+      width: 90%;
+    }
+  }

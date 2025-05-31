@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="SignUp.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="box-1">
+        <div class="box-1__image">
+          <img src="img.jpg" alt="">
+        </div>
+      </div>
+      <div class="box-2">
+        <div class="box-2__sign-up">
+          <div class="box-2__sign-in">
+          Have an account? <a href="#">Sign in</a>
+          </div>
+          <div class="box-2__heading">
+            <b><h1>Sign Up</h1></b>
+          </div>
+          <div class="box-2">
+            <form id="signUpForm">
+              <div class="box-2__form">
+                <div class="box-2__form--name">
+                  <label for="user-name">Name:</label>
+                  <input
+                    id="user-name"
+                    type="text"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="box-2__form--email">
+                  <label for="user-email">Email:</label>
+                  <input
+                    id="user-email"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="box-2__form--password">
+                  <label for="user-password">Password:</label>
+                  <input
+                    id="user-password"
+                    type="password"
+                    placeholder="Enter your password"
+                  />
+                </div>
+                <div class="box-2__form--checkbox">
+                  <h5>
+                    <input type="checkbox" id="user-tc" /> I've read and agree
+                    with
+                    <a href="https://policies.google.com/terms?hl=en-US">
+                      Terms of Service</a
+                    >
+                    and our
+                    <a href="https://policies.google.com/privacy?hl=en-US">
+                      Privacy Policy</a
+                    >
+                  </h5>
+                </div>
+                <div class="box-2__form--button">
+                  <button id="submitbtn">Sign Up</button> 
+                </div>
+              </div>
+            </form>
+            <div class="box-2__or"><strong>Or</strong>&nbsp;Sign up with</div>
+            <div class="box-2__options">
+              <button>
+                <img src="facebook.png" alt="Facebook" style="height: 20px;"/>
+                <a href="http://www.facebook.com"></a>
+              </button>
+              <button>
+                <img src="google.png" alt="Google" style="height: 20px;"/>
+                <a href="https://www.google.com/"></a>
+              </button>
+              <button>
+                <img src="apple-logo.png" alt="Apple" style="height: 20px;"/>
+                <a href="http://www.apple.com"></a>
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  <script src="SignUp.js"></script>
+  </body>
+</html>
